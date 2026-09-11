@@ -1,0 +1,12 @@
+mitigation_id,name,type,framework,technique_ids,finding_ids,status,validation_status,validated_date,owner,evidence
+M-01,WAF virtual patch + input validation fix on portal,remediation,internal,T1190,F-001,closed,retest pass,2026-09-01,AppSec,CHG-2231
+M-02,Rotate SPN passwords to 30+ chars / gMSA,remediation,CIS 5.2,T1558.003,F-002,done,,,AD Team,CHG-2240
+M-03,Enforce SMB signing via GPO,compliance_rule,CIS 18.x,T1557.001,,in progress,,,AD Team,
+M-04,Remove unconstrained delegation,remediation,internal,T1550,F-004,resolved,retest fail,2026-09-02,AD Team,CHG-2245
+M-05,Enable LSA protection + Credential Guard,control,CIS 18.9,T1003.001;T1003,,implemented,,,Endpoint,GPO-CG
+M-06,Attachment sandboxing + macro block,control,NIST SI-3,T1566.001;T1204.002,,implemented,retest pass,2026-09-03,SecOps,
+M-07,Block RDP between user and server VLANs,control,PCI 1.3,T1021.001,F-008,to do,,,Network,
+M-08,MFA on VPN portal,remediation,internal,T1133,F-012,deployed,,,Network,CHG-2250
+M-09,EDR rollout to OT jump hosts,remediation,internal,T1562.001,F-011,scheduled,,,OT Security,
+M-10,Privileged access workstation program,control,NIST AC-6,T1078,,implemented,,,IAM,
+M-11,Egress filtering to unknown hosts,control,internal,T1071;T1105,,implemented,,,Network,

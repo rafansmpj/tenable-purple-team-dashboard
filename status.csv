@@ -1,0 +1,15 @@
+finding_id,status,validation_status,validated_date,ticket_id,owner,updated_date,notes
+F-001,Closed,,,SEC-101,AppSec,2026-08-30,
+F-001,Closed,Retest Pass,2026-09-01,SEC-101,AppSec,2026-09-01,Red confirmed blocked
+F-002,Done,,,SEC-102,AD Team,2026-08-29,
+F-003,In Progress,,,SEC-103,AD Team,2026-09-02,GPO in pilot OU
+F-004,Resolved,,,SEC-104,AD Team,2026-08-28,
+F-005,Open,,,SEC-105,Endpoint,2026-08-20,
+F-006,Closed,Verified,2026-09-03,SEC-106,SecOps,2026-09-03,
+F-007,Backlog,,,SEC-107,Endpoint,2026-08-20,
+F-008,To Do,,,SEC-108,Network,2026-08-21,
+F-009,Open,,,SEC-109,PKI,2026-08-22,waiting vendor guidance
+F-010,Risk Accepted,,,SEC-110,Backup,2026-08-25,legacy job retires Q4
+F-012,Deployed,,,SEC-112,Network,2026-09-04,
+F-013,Awaiting Vendor,,,SEC-113,Cloud,2026-08-26,
+F-099,Closed,,,SEC-199,Unknown,2026-08-26,ticket for finding not in pentest report

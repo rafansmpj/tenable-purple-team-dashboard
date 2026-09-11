@@ -1,0 +1,16 @@
+finding_id,title,technique_id,severity,asset,attack_path,exploitability,internet_exposed,acr,red_evidence,date_found
+F-001,SQLi on customer portal leads to RCE,T1190,Critical,web-portal-01,External -> DMZ -> AD,demonstrated,true,8,screenshots/f001.png,2026-08-12
+F-002,Kerberoastable service account with weak password,T1558.003,High,dc-prod-01,External -> DMZ -> AD,demonstrated,false,10,hashcat cracked in 4h,2026-08-13
+F-003,SMB signing not required on file servers,T1557.001,High,fs-prod-02,External -> DMZ -> AD,demonstrated,false,7,ntlmrelayx session,2026-08-13
+F-004,Unconstrained delegation on app server,T1550,High,app-prod-03,External -> DMZ -> AD,exploit_available,false,6,,2026-08-14
+F-005,LSASS dump via ProcDump on workstation,T1003.001,High,ws-fin-114,Phishing -> Workstation -> Finance,demonstrated,false,4,dump obtained,2026-08-14
+F-006,Macro phishing lure executed,T1566.001;T1204.002,Medium,ws-fin-114,Phishing -> Workstation -> Finance,demonstrated,false,4,2 of 40 users clicked,2026-08-11
+F-007,Local privilege escalation via unquoted service path,T1068,Medium,ws-fin-114,Phishing -> Workstation -> Finance,demonstrated,false,4,,2026-08-14
+F-008,RDP reachable from user VLAN to finance servers,T1021.001,High,fin-srv-01,Phishing -> Workstation -> Finance,demonstrated,false,9,lateral RDP session,2026-08-15
+F-009,ADCS ESC1 template allows SAN in request,T1649,Critical,pki-01,External -> DMZ -> AD,demonstrated,false,10,certipy auth as DA,2026-08-15
+F-010,Cleartext FTP credentials on backup job,T1040,Medium,bkp-01,Backup exposure,demonstrated,false,7,pcap,2026-08-16
+F-011,Missing EDR on 12 OT jump hosts,T1562.001,High,ot-jump-*,OT reach,theoretical,false,9,,2026-08-16
+F-012,Exposed VPN portal without MFA,T1133,Critical,vpn-01,External -> VPN,demonstrated,true,9,password spray success,2026-08-10
+F-013,Weak S3 bucket policy exposes exports,,High,s3-exports,Cloud data,demonstrated,true,6,object listing,2026-08-17
+F-014,DCSync rights on service account,T1003.006,Critical,dc-prod-01,External -> DMZ -> AD,demonstrated,false,10,secretsdump,2026-08-15
+F-015,Backup share readable by Domain Users,TA0009,Medium,bkp-01,Backup exposure,demonstrated,false,7,,2026-08-16

@@ -1,0 +1,3 @@
+target_id,owner,retest_date,ticket_number,retest_result,note,edited_by
+M-01,Blue Team - Alice,2026-09-05,SEC-1234,pass,Re-tested by Red; attack blocked,alice
+F-004,Infra - Bob,,CHG-5678,,Ticket opened; retest pending,bob
